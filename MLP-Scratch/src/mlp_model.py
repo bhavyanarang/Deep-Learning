@@ -249,7 +249,7 @@ class MLP():
         plt.xlabel('Epochs')
         plt.ylabel('Accuracy')
         
-        plt.savefig(os.path.join(save_path, 'val_plot_{}.png'.format(self.model_num)))
+        plt.savefig(os.path.join(save_path, 'Validation_Accuracy_plot_{}.png'.format(self.model_num)))
         
     def plot_training_val(self, val_flag, save_path=None):
         print("Plotting training accuracy")
@@ -262,7 +262,7 @@ class MLP():
         plt.ylabel('Loss')
         plt.legend()
         
-        plt.savefig(os.path.join(save_path, 'train_plot_{}.png'.format(self.model_num)))
+        plt.savefig(os.path.join(save_path, 'Loss_plot_{}.png'.format(self.model_num)))
             
     def forward_propagation(self):
 
